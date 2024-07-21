@@ -7,5 +7,18 @@
   margin: 0 auto;
   margin-top: 22px;
   padding: 0 19px;
-  padding-bottom: 132px;
+  padding-bottom: 222px;
+}
+
+@media screen and (max-width: 1080px) {
+  .wrapper {
+    padding-bottom: 202px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    padding-bottom: 202px;
+  }
 }

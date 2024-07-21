@@ -1,0 +1,107 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  box-shadow: inset 0px 4px 5px #a6a6a668;
+  -moz-box-shadow: inset 0 10px 10px -10px #a6a6a668;
+  -webkit-box-shadow: inset 0 10px 10px -10px #a6a6a668;
+  box-shadow: inset 0 10px 10px -10px #a6a6a668;
+}
+
+.content {
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.content > div:hover p {
+  color: #9395d3;
+}
+.content > div:hover img {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(22%) saturate(3628%)
+    hue-rotate(192deg) brightness(85%) contrast(92%);
+}
+
+.content p {
+  color: #8b8787;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.add {
+  transition: 0.2s;
+  transition-timing-function: linear;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  background-color: #9395d3;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 129px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #9395d3;
+}
+
+.add:hover {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #9395d3;
+}
+
+.add:hover img {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(0%)
+    hue-rotate(153deg) brightness(88%) contrast(83%);
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    height: 88px;
+  }
+  .content {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  .content p {
+    font-size: 13px;
+  }
+  .content img {
+    height: 18px;
+    width: 18px;
+  }
+  .add {
+    bottom: 109px;
+  }
+}
