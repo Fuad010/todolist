@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  min-height: 82px;
+  padding: 22px 19px;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.wrapper:hover {
+  box-shadow: 0px 1.5px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.left h3 {
+  color: #9395d3;
+  font-family: Jost;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.left p {
+  color: #000;
+  font-family: Jost;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rightCrud {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.rightCrud img {
+  transition: 0.1s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+.rightCrud img:hover {
+  transform: scale(1.16);
+}
+.red img:hover {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(90%) saturate(4494%)
+    hue-rotate(342deg) brightness(103%) contrast(105%);
+}
+.orange img:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(95%) saturate(889%)
+    hue-rotate(348deg) brightness(100%) contrast(103%);
+}
+.green img:hover {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(60%) saturate(518%)
+    hue-rotate(99deg) brightness(89%) contrast(101%);
+}
+
+@media screen and (max-width: 468px) {
+  .rightCrud {
+    flex-direction: column;
+  }
+}
