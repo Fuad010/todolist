@@ -1,0 +1,22 @@
+.input {
+  width: 100%;
+  background: none;
+  box-shadow: none;
+  border-bottom: 1px solid #8b8787;
+  transition: 0.2s;
+  transition-timing-function: linear;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid #9395d3;
+}
+
+.input::placeholder {
+  color: #8b8787;
+}
