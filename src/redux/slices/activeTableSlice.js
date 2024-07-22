@@ -18,7 +18,7 @@ const activeTableSlice = createSlice({
     handleActiveCompletedTable: (state, action) => {
       state.isActiveCompletedTable = action.payload
       if (action.payload) {
-        state.isActiveAllTable = false
+        state.isActiveAllTable = true
       }
     },
   },

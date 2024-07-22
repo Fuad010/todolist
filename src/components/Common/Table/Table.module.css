@@ -19,7 +19,7 @@
 .left h3 {
   color: #9395d3;
   font-family: Jost;
-  font-size: 13px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -28,7 +28,7 @@
 .left p {
   color: #000;
   font-family: Jost;
-  font-size: 10px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -61,8 +61,33 @@
     hue-rotate(99deg) brightness(89%) contrast(101%);
 }
 
+.border {
+  border: 1px solid rgba(50, 50, 50, 0.521);
+}
+
+@media screen and (max-width: 1080px) {
+  .left p {
+    font-size: 15px;
+  }
+  .left h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .left p {
+    font-size: 13px;
+  }
+  .left h3 {
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 468px) {
-  .rightCrud {
-    flex-direction: column;
+  .left p {
+    font-size: 10px;
+  }
+  .left h3 {
+    font-size: 13px;
   }
 }

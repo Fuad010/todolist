@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   isActiveAddModal: false,
-  isActiveEditModal: true,
+  isActiveEditModal: false,
 }
 
 const activeModalSlice = createSlice({

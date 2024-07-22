@@ -1,0 +1,43 @@
+.modal {
+  position: fixed;
+  transition: 0.2s;
+  transition-timing-function: linear;
+  opacity: 1;
+  left: 0%;
+  z-index: 10;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  z-index: 10;
+  margin-top: 0;
+  top: 90px;
+}
+
+.content {
+  max-width: 1080px;
+  width: 1080px;
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1080px) {
+  .content {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    top: 74px;
+  }
+}
