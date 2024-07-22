@@ -33,16 +33,18 @@ export default function CompletedModal() {
       />
       <div className={styles.wrapper}>
         <div className={styles.content}>
-          {todos.map((todo) => (
-            <Table
-              key={todo.id}
-              id={todo.id}
-              title={todo.title}
-              desc={todo.desc}
-              completed={todo.completed}
-              isAll={false}
-            />
-          ))}
+          {todos
+            .filter((todo) => todo.completed)
+            .map((todo) => (
+              <Table
+                key={todo.id}
+                id={todo.id}
+                title={todo.title}
+                desc={todo.desc}
+                completed={todo.completed}
+                isAll={false}
+              />
+            ))}
         </div>
       </div>
     </div>
