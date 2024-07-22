@@ -5,7 +5,7 @@ import Footer from '../Common/Footer/Footer'
 export default function Main() {
   return (
     <>
-      <Header />
+      <Header isModal={false} title={'Todo App'} />
       <Todos />
       <Footer />
     </>
